@@ -22,8 +22,7 @@ jobs:
         with:
           cache: npm
       - run: |
-          mkdir -p ../build && cd ../build
-          echo idk
+          mv build ../build
       - run: npm ci
       - run: npm run build
       - uses: actions/configure-pages@v3
